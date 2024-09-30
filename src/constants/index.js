@@ -24,6 +24,7 @@ import {
   jobit,
   tripguide,
   threejs,
+  parimitra
 } from "../assets";
 
 export const navLinks = [
@@ -104,6 +105,18 @@ const technologies = [
 ];
 
 const experiences = [
+  {
+    title: "Software Developer",
+    company_name: "Parimitra Pvt Ltd",
+    icon: parimitra,
+    iconBg: "white",
+    date: "Aug 2024 - Current",
+    points: [
+      "Led full-stack development for web and mobile applications, managing both frontend and backend tasks.",
+      "Oversaw project progress, coordinating with web and app development teams to meet timely delivery of milestones.",
+      "Directed server infrastructure, deployment pipelines and Firestore database securing best performance and security."
+    ]
+  },
   {
     title: "ML Engineer",
     company_name: "Singla Labs IITR",

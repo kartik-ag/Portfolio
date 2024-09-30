@@ -25,6 +25,7 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.jpeg";
 import tesla from "./company/tesla.jpeg";
+import parimitra from "./company/parimitra.jpeg";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.jpeg";
@@ -60,4 +61,5 @@ export {
   carrent,
   jobit,
   tripguide,
+  parimitra
 };
