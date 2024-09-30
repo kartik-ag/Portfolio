@@ -30,6 +30,9 @@ import parimitra from "./company/parimitra.jpeg";
 import carrent from "./carrent.png";
 import jobit from "./jobit.jpeg";
 import tripguide from "./tripguide.jpeg";
+import neural from "./neural.jpg";
+import webAnno from "./webAnno.png";
+import lowLight from "./lowLight.jpg";
 
 export {
   logo,
@@ -38,6 +41,7 @@ export {
   mobile,
   web,
   github,
+  webAnno,
   menu,
   close,
   css,
@@ -51,12 +55,14 @@ export {
   reactjs,
   redux,
   tailwind,
+  neural,
   typescript,
   threejs,
   meta,
   shopify,
   amit,
   starbucks,
+  lowLight,
   tesla,
   carrent,
   jobit,
