@@ -6,7 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-
+import commutify from "./commutify.png"
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -26,7 +26,7 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.jpeg";
 import tesla from "./company/tesla.jpeg";
 import parimitra from "./company/parimitra.jpeg";
-
+import chatbot from "./chatbot.jpg"
 import carrent from "./carrent.png";
 import jobit from "./jobit.jpeg";
 import tripguide from "./tripguide.jpeg";
@@ -67,5 +67,7 @@ export {
   carrent,
   jobit,
   tripguide,
-  parimitra
+  parimitra,
+  commutify,
+  chatbot
 };

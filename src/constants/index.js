@@ -1,3 +1,4 @@
+import { color } from "framer-motion";
 import {
   mobile,
   backend,
@@ -27,7 +28,9 @@ import {
   threejs,
   parimitra,
   lowLight,
-  neural
+  neural,
+  commutify,
+  chatbot
 } from "../assets";
 
 export const navLinks = [
@@ -109,16 +112,30 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Software Developer",
+    title: "Software Developer Intern",
     company_name: "Parimitra Pvt Ltd",
     icon: parimitra,
     iconBg: "white",
-    date: "Aug 2024 - Current",
+    date: "July 2024 - September 2024",
     points: [
-      "Led full-stack development for web and mobile applications, managing both frontend and backend tasks.",
-      "Oversaw project progress, coordinating with web and app development teams to meet timely delivery of milestones.",
-      "Directed server infrastructure, deployment pipelines and Firestore database securing best performance and security."
-    ]
+      "Developed secure role-based authentication by defining user roles, integrating Google Authenticator and OTP services.",
+      "Developed an API to shift data filtration management from frontend to backend, reducing website load, preventing hangs, and enabling efficient graph generation.",
+      "Engineered a software system to store IoT device analytics in Firebase, modeled Firestore clusters for efficient data organization, and integrated Twilio to deliver real-time alerts and warnings to clients.",
+      "Delivered products CrowdEye for crowd analytics and TransitEye for vehicle tracking, deploying on Vercel with CI/CD and performance optimization for a responsive user experience."
+    ]    
+  },
+  {
+    title: "Web Developer",
+    company_name: "Commutify",
+    icon: commutify,
+    iconBg: "white",
+    date: "October 2024 - Present",
+    points: [
+      "Integrated an ML model to predict occupancy and transit details, connecting it to another server via an API endpoint that provides real-time transit occupancy data for a trip planner.",
+      "Created a dashboard to analyze ETM data, providing service providers with agency- and route-based analytics, including revenue, occupancy, and time-based trends for improved operational insights.",
+      "Integrated the Esquisse app, an R-based tool, to enable interactive data visualization and enhance analytical efficiency.",
+      "Configured and managed NGINX for hosting backend APIs, optimized server performance, and set up logging for real-time API monitoring and error tracking in production environments."
+    ]    
   },
   {
     title: "ML Engineer",
@@ -127,23 +144,24 @@ const experiences = [
     iconBg: "white",
     date: "Jun 2024 - July 2024",
     points: [
-      "Worked on a CNN-based machine learning application for 3D microscopy image segmentation with 85% accuracy.",
-      "Increased research throughput by 50% through enhanced visualization and analysis of cellular morphology.",
-      "Deployed algorithms for multi-class segmentation, reducing segmentation time by 60% compared to manual ones.",
-    ],
+      "Developed a TensorFlow model for 3D cell segmentation in microscopy, achieving a Dice coefficient of 0.2917.",
+      "Automated preprocessing for over 1,500+ 3D images, streamlining the workflow and enhancing efficiency.",
+      "Improved the signal-to-noise ratio, significantly boosting image quality and image analysis accuracy.",
+      "Fine-tuned hyperparameters and optimized training processes, leading to more reliable segmentation results."
+    ]    
   },
   {
     title: "Frontend Manager",
     company_name: "Cognizance IITR",
     icon: starbucks,
     iconBg: "black",
-    date: "January 2023 - March 2024",
+    date: "January 2023 - Present",
     points: [
-      "Designed a 3D spline model for the home page, enhancing attendee experience and event navigation.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Oversaw server configurations and deployments, achieving 99.9% uptime for the Techfest IITR website.",
-      "Optimized and maintained databases for 3000+ registrations, ensuring efficient data storage and retrieval",
-    ],
+      "Integrated a 3D spline model and created events and workshops page to enhance attendee experience and engagement.",
+      "Built user authentication features, including Forgot Password and Google Sign-Up, to streamline the registrations.",
+      "Created an admin feature to automate and streamline various operational tasks for the Cognizance team.",
+      "Collaborated with a payment partner to process payments, while maintaining records for carting, ticketing systems, and other transactional data."
+    ]    
   },
   
 ];
@@ -204,49 +222,6 @@ const projects = [
     source_code_link: "https://github.com/kartik-ag/Neural-Style-Transfer",
   },
   {
-    name: "Crowd-Eye",
-    description:
-      "The project addresses overcrowding issues at Har Ki Pauri, Haridwar, by using IoT cameras for real-time monitoring, preventing stampedes, and enabling authorities to respond quickly with live updates and alerts.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "firebase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "data management",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://parimitra.in/",
-  },
-  
-  {
-    name: "Commutify",
-    description:
-      "The project aims to improve trip planning by predicting transit crowding and optimizing routes, helping passengers avoid delays and identify transportation service gaps for better service efficiency.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "deep learning",
-        color: "green-text-gradient",
-      },
-      {
-        name: "graphs",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "http://pis.iitr.ac.in",
-  },
-  {
     name: "Web Annotator Extension",
     description:
     "The web annotator extension enhances online research by allowing users to highlight, comment, and organize content directly on webpages. It features saving functionality for easy retrieval and collaboration, streamlining workflows for researchers and students alike.",
@@ -288,6 +263,26 @@ const projects = [
     image: lowLight,
     source_code_link: "https://github.com/kartik-ag/Image-Enhancement",
   },
+  {
+    name: "RAG Chatbot",
+    description: "An intelligent RAG chatbot that provides real-time transit directions and assists users with seamless, accurate travel planning.",
+    tags: [
+      {
+        name: "Retrieval Augmented Generation",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Large Language Model",
+        color: "green-text-gradient"
+      },
+      {
+        name: "Artificial intelligence",
+        color: "pink-text-gradient"
+      }
+    ],
+    image: chatbot,
+    source_code_link: "#"
+  }
 ];
 
 export { services, technologies, experiences, testimonials, projects };
